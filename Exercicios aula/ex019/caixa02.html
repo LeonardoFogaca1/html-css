@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+</head>
+<style>
+    body{
+        background-color: rgb(73, 60, 60);
+        text-size-adjust: 10px;
+        text-shadow: 1px 1px 1px white;
+    }
+    header{
+        background-color: aliceblue;
+        padding: 2px;
+        margin: 5px;
+        border-radius: 10px;
+        box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.288);
+    }
+    nav{
+        background-color: gray;
+        margin: 6px;
+        padding: 10px;
+        text-decoration: none;
+        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.733);
+        
+    }
+    main{
+        background-color: aliceblue;
+        margin: 5px;
+        padding: 3px;
+        box-shadow: 3px 5px 2px black;
+        border-radius: 10px;
+    }
+    article{
+        background-color: aquamarine;
+        margin: 5px;
+        padding: 2px;
+        box-shadow: 0px 1px 1px black;
+    }
+    article > p{
+        background-color: aqua;
+        text-shadow: 1px 1px 1px rgb(48, 35, 35);
+    }
+    footer{
+        background-color: blanchedalmond;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        box-shadow: 2px 2px 2px rgb(0, 0, 0);
+        border-radius: 5px;
+        text-shadow: 1px 1px 1px rgb(48, 35, 35);
+        font-weight: bolder;
+    }
+    footer > p{
+        margin: 0px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Bem vindos ao meu SITE</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+
+        </section>
+        <section id="Notícias">
+            <article>
+                <h2>Notícia sobre o LOREM</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore quae, ratione id incidunt doloremque doloribus magni quod aperiam consequatur totam sit pariatur harum voluptatem minima mollitia corrupti consequuntur quia ea!</p>
+                <aside>
+                    <p>artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+            <article>
+                <h2>Noticia 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus soluta assumenda explicabo cupiditate repellat sint esse officiis libero consequuntur? Sequi quaerat facere debitis nesciunt nobis dolorum magni sit alias atque?2222</p>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Fogaça</p>
+    </footer>
+
+    
+</body>
+</html>
