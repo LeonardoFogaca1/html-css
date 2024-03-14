@@ -3,9 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela 2</title>
+    <title>Tabela Grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 800px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.349);
+            background-color: rgba(29, 23, 23, 0.747);
+            color: white;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: rgb(126, 123, 123);
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:  rgb(126, 123, 123);
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgba(65, 65, 65, 0.836);
+            color: white;
+
+        }
+
+        td.num{
+            text-align: center;
+        }
+
+        td.porcent{
+            text-align: right;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.3em;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Uso das Grandes Tabelas</h1>
+    <!--
+        anatomia para tabelas grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <TABle>
+        <caption>População da República Brasileira</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 60px;">População</th>
+                <th scope="col" style="width: 70px;">Porcentagem</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>São paulo</td>
+                <td class="num">44 190 046</td>
+                <td class="porcent">21%</td>
+             </tr>
+             <tr>
+             <td>Minas Gerais</td>
+             <td class="num">19 912 102</td>
+             <td class="porcent">10%</td>
+            </tr>
+             <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 023 029</td>
+                <td class="porcent">7%</td>
+             </tr>
+             <tr>
+                <td>Bahia</td>
+                <td class="num">14 141  046</td>
+                <td class="porcent">6%</td>
+             </tr>
+             <tr>
+             <td>Paraná</td>
+             <td class="num">11 912 102</td>
+             <td class="porcent">5%</td>
+            </tr>
+             <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 023 029</td>
+                <td class="porcent">5%</td>
+             </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 190 046</td>
+                <td class="porcent">4%</td>
+             </tr>
+             <tr>
+             <td>Ceará</td>
+             <td class="num">8 912 102</td>
+             <td class="porcent">4%</td>
+            </tr>
+             <tr>
+                <td>Pará</td>
+                <td class="num">8 023 029</td>
+                <td class="porcent">4%</td>
+             </tr>
+             <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 190 046</td>
+                <td class="porcent">3%</td>
+             </tr>
+             <tr>
+             <td>Goiás</td>
+             <td class="num">7 912 102</td>
+             <td class="porcent">3%</td>
+            </tr>
+             <tr>
+                <td>Maranhão</td>
+                <td class="num">6 023 029</td>
+                <td class="porcent">3%</td>
+             </tr>
+             <tr>
+                <td>Paraíba</td>
+                <td class="num">3 190 046</td>
+                <td class="porcent">1%</td>
+             </tr>
+             <tr>
+             <td>Amazonas</td>
+             <td class="num">3 912 102</td>
+             <td class="porcent">1%</td>
+            </tr>
+             <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 023 029</td>
+                <td class="porcent">1%</td>
+             </tr>
+             <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 190 046</td>
+                <td class="porcent">1%</td>
+             </tr>
+             <tr>
+             <td>Rio Grande do Norte</td>
+             <td class="num">3 912 102</td>
+             <td class="porcent">1%</td>
+            </tr>
+             <tr>
+                <td>Piauí</td>
+                <td class="num">3 023 029</td>
+                <td class="porcent">7%</td>
+             </tr>
+             <tr>
+                <td>Alagoas</td>
+                <td class="num">3 190 046</td>
+                <td class="porcent">1%</td>
+             </tr>
+             <tr>
+             <td>Distrito Federal</td>
+             <td class="num">2 912 102</td>
+             <td class="porcent">1%</td>
+            </tr>
+             <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 023 029</td>
+                <td class="porcent">1%</td>
+             </tr>
+             <tr>
+                <td>Sergipe</td>
+                <td class="num">2 190 046</td>
+                <td class="porcent">1%</td>
+             </tr>
+             <tr>
+             <td>Rondônia</td>
+             <td class="num">1 912 102</td>
+             <td class="porcent">0,78%</td>
+            </tr>
+             <tr>
+                <td>Tocantins</td>
+                <td class="num">1 023 029</td>
+                <td class="porcent">0,74%</td>
+             </tr>
+        </tbody>
+        <tfoot>
+             <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>259 290 098</strong></td>
+                <td><strong>100</strong>%</td>
+
+             </tr>
+        </tfoot>
+    </TABle>
+
+    <h1>Porque a diferença tão grande da Populaçao de São Paulo em relação as outras cidades?</h1>
+    <p>O estado de São Paulo é o mais populoso do Brasil. A sua população gira em torno de mais de 46 milhões de habitantes, e somente a capital do estado, São Paulo, possui mais de 12 milhões de habitantes. A população paulista aumentou muito ao longo do século XX, principalmente por meio das grandes levas de migrantes internos e externos que vieram para a região.</p>
+
+        <p>No cenário internacional, destacam-se os imigrantes italianos, sírios, libaneses, japoneses e coreanos. Já no Brasil, as maiores levas de imigrantes vieram da Região Nordeste do país. A maior parte da população paulista é urbana e apresenta bons indicadores de educação e renda. O estado de São Paulo apresenta várias concentrações urbanas. As maiores cidades em população do estado, além da capital, são Guarulhos e Campinas, com mais de 1 milhão de habitantes. As cidades de São Bernardo do Campo, São José dos Campos, Santo André, Ribeirão Preto, Osasco e Sorocaba possuem mais de meio milhão de habitantes.</p>
+        
+        <p>Veja também: Envelhecimento populacional — resultado de baixa taxa de natalidade e alta expectativa de vida</p>
+        
+        <p>
+            Economia de São Paulo
+            O estado de São Paulo é o principal centro econômico e industrial do Brasil. O território paulista possui todos os ramos industriais bem desenvolvidos e com participação importante na geração de riquezas do estado.
+        </p>
+        
+        <p>O setor primário é marcado pela agropecuária altamente mecanizada, muito desenvolvida e de alto valor agregado. A agricultura está baseada na produção de cana-de-açúcar, soja, laranja, café, banana, feijão, algodão, batata, entre outros. Já na pecuária, é grande a produção de carne bovina e suína, além de aves, assim como a produção de leite e ovos. No extrativismo, a silvicultura é amplamente praticada no interior do estado.</p>
+        
+        <p>Já o setor secundário é muito diversificado e possui ampla área geográfica de abrangência. As principais indústrias do estado estão voltadas para o beneficiamento de produtos primários, como as indústrias de celulose e de derivados de petróleo, assim como as voltadas para bens de produção e consumo, como máquinas e equipamentos, automóveis, aviões, eletrodomésticos, alimentos, bebidas e artigos de confecção.</p>
+        
+        <p>O estado de São Paulo, apesar de possuir indústrias em quase todos os centros urbanos, possui três áreas de grande concentração industrial:</p>
+        
+        <p>
+            Região metropolitana da cidade de São Paulo: há várias indústrias de peças automobilísticas, automóveis, farmacêuticas e de tecnologia.
+            Região do Vale do Paraíba: predominam-se empresas produtivas de automóveis, aviões e eletrônicos.
+            Entorno da cidade de Campinas: há indústrias químicas, de máquinas e equipamentos, têxteis e farmacêuticas.
+            O interior do estado é marcado pela presença da agroindústria.Por fim, o setor terciário é marcado pela ampla oferta de comércios e serviços. O estado é um importante centro de comercialização de produtos, assim como oferece vários serviços bancários, hospitalares, logísticos, entre outros. No mais, o funcionalismo público também é um importante gerador de empregos.
+        </p>
+
+        <p>Outro fator relevante para São Paulo é o turismo muito desenvolvido, pois o estado possui diversas regiões turísticas. Destaca-se o extenso litoral, com ampla infraestrutura hoteleira, o turismo religioso, muito praticado na cidade de Aparecida, o turismo de negócios, concentrado na capital, além do turismo de aventura e o ecoturismo, presente em todo o estado.</p>
+        
+        <p>
+            Governo de São Paulo
+            O governo do estado de São Paulo é formado por meio dos poderes Executivo, Judiciário e Legislativo. O Poder Executivo está representado na figura do governador do estado. Já o Judiciário configura-se nas unidades de Justiça estadual. Por fim, o Legislativo compreende a figura dos legisladores. O estado de São Paulo possui 70 deputados federais e 3 senadores que atuam em âmbito federal, além de 94 deputados estaduais, no âmbito estadual.
+        </p>
+        
+        <p>
+            Bandeira de São Paulonfraestrutura de São Paulo
+            O estado de São Paulo possui a melhor infraestrutura de transportes, energia, telecomunicações e serviços urbanos do Brasil. A malha rodoviária paulista é extremamente desenvolvida e serve como vetor para o desenvolvimento das atividades produtivas no estado. A rede de transportes paulista é composta ainda por modais ferroviários, aeroviários e aquaviários. Entre os equipamentos de destaque nacional presentes em São Paulo, estão o Aeroporto Internacional de Guarulhos, o maior aeroporto do Brasil, e também o Porto de Santos, porto de maior movimento do Brasil.
+        </p>
+        
+        <p>Por sua vez, o acesso à água potável e saneamento, assim como às redes de energia e telecomunicações, é muito difundido pelo território paulista. As cidades paulistas, no geral, possuem uma moderna infraestrutura urbana, com uma boa oferta de serviços para a população. Do mesmo modo, as redes de saúde e educação são modernas e bem distribuídas. No estado, estão concentrados os mais modernos centros de saúde do Brasil, assim como as principais universidades brasileiras. O estado conta ainda com importantes centros de pesquisa e desenvolvimento, em cidades como Campinas e São Carlos. O território paulista abriga ainda a sede de importantes veículos de imprensa do Brasil.</p>
+        
+        <p>Leia também: Instituto Butantan — instituição paulista mundialmente conhecida pela produção de vacinas e soros</p>
+        
+        <p>Cultura de São PauloA cultura do estado de São Paulo foi construída por meio da influência dos povos que fundaram a nação brasileira, assim como pelos diferentes grupos de imigrantes que vieram para a região em busca de melhores condições de vida. O estado apresenta um grande volume de equipamentos culturais, como museus, cinemas e bibliotecas, além de ser um polo de produção cultural no Brasil. São destaques eventos culturais como a Bienal Internacional de Arte de São Paulo e a Mostra Internacional de Cinema de São Paulo. Além disso, o estado sedia inúmeros shows artísticos, mostras de arte e peças de teatro de renome internacional.</p>
+
+        <p>Já com relação aos hábitos cotidianos, no estado de São Paulo há uma grande mescla de gêneros musicais, danças folclóricas e eventos diversos, além de inúmeras opções de lazer para a população. O samba, a música clássica, o pop e o rock são gêneros musicais presentes na identidade paulista.  As danças folclóricas possuem influências indígenas, como as do bate-pé e as do caiapó. Já na culinária, são pratos típicos do estado o frango ao molho pardo, pastel de angu e pudim. A população paulista realiza muitas atividades ao ar livre, como caminhada e ciclismo. O futebol é o esporte mais apreciado, e o estado conta ainda com clubes importantes de futsal, basquete, handebol e vôlei.</p>
 </body>
 </html>
