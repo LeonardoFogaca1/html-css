@@ -24,7 +24,10 @@
 
         <script>
             function calcIdade() {
-                let atual = new Date().getFullYear() iidade.innerHTML = Number(atual) - Number(iano.value)
+                let atual = new Date().getFullYear();
+                let iano = document.getElementById('iano').value;
+                let iidade = document.getElementById('iidade');
+                iidade.innerHTML = Number(atual) - Number(iano);
             }
         </script>
     </p>
