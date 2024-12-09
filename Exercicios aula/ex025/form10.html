@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="cadastro.php" method="post"></form>
+
+    <p>
+        <label for="iano">Em que ano você nasceu?</label>
+        <input type="number" name="number" id="inum" min="1920" max="2024" oninput="calcIdade()">
+    </p>
+
+    <p>
+        <label for="iidade">Sua idade é:</label>
+        <output id="iidade">0</output>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear();
+                let iano = document.getElementById('iano').value;
+                let iidade = document.getElementById('iidade');
+                iidade.innerHTML = Number(atual) - Number(iano);
+            }
+        </script>
+    </p>
+</body>
+</html>

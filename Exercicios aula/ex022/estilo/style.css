@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Madimi One", sans-serif;
+    --font3: "Courgette", cursive;;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Madimi+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+    font-size: 1.3em;
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font1);
+}
+header > h1{
+    padding-top: 40px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 40px;
+}
+
+header a, footer a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: skyblue;
+    text-decoration: underline;
+}
+
+section{
+    padding-left: 25px;
+    padding-bottom: 4px;
+    line-height: 5.5vw;
+    font-family: var(--font3);
+}
+section > p{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+
+.normal{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.imagem{
+    background-color: rgb(128, 128, 128);
+    color: white;
+    background-position: cover;
+    background-attachment: fixed;
+    padding-left: 0px;
+    box-shadow: inset 0px 0px 3px rgb(0, 0, 0);
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.205);
+    width: 400px;
+    padding: 1em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.26);
+}
+
+section#img1{
+     background-image: url(../imagens/background001.jpg);
+     background-position: center center;
+     
+}
+
+section#img2{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right bottom;
+    
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ept-brn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+
+        }
+
+        body{
+            
+        }
+
+        main{
+            background-color: rgb(49, 109, 199);
+            position: absolute;
+           box-sizing: border-box;
+           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+        }
+
+        input#ienviar:hover{
+            background-color: rgb(59, 56, 56);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Fomulário</h1>
+        <form action="cadastro.php"  method="post" autocomplete="off">
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="Nome" id="inome">
+            </p>
+            <p><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="Sobrenome" id="isobrenome">
+            </p>
+            <p><input type="submit" value="Enviar" id="ienviar"></p>
+        </form>
+    </main>
+</body>
+</html>
